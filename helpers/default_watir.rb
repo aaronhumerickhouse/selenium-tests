@@ -1,6 +1,5 @@
 require_relative '../utilities/soft_asserts'
 require_relative '../utilities/utilities'
-require_relative 'hq/tournament/navigation'
 require_relative '../spec/spec_helper'
 require_relative 'sauce_helper'
 
