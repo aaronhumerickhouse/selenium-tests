@@ -1,0 +1,4 @@
+--format progress
+--format ParallelTests::RSpec::SummaryLogger --out results/spec_summary.log
+--format ParallelTests::RSpec::RuntimeLogger --out results/parallel_runtime_rspec.log
+--format ParallelTests::RSpec::FailuresLogger --out results/failing_specs.log

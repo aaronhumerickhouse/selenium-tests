@@ -1,0 +1,5 @@
+require_relative 'membership_initiation/additional_items_helper'
+require_relative 'membership_initiation/choose_membership_helper'
+require_relative 'membership_initiation/choose_membership_level_helper'
+require_relative 'membership_initiation/create_profile_helper'
+require_relative 'membership_initiation/waivers_and_policies_helper'

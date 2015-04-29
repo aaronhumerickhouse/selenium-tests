@@ -1,0 +1,19 @@
+<% date_time_td = '//td[2]' %>
+
+game_number: '//td[1]'
+
+date_input_path: "<%= date_time_td %>//input[contains(@class,'datepicker-input')]"
+date_display_path: "<%= date_time_td %>//input[contains(@class,'datepicker-display')]"
+time_input_path: "<%= date_time_td %>//input[contains(@class,'timepicker-input')]"
+time_display_path: "<%= date_time_td %>//input[contains(@class,'timepicker-display')]"
+
+away_team_path: '//td[3]//label'
+away_score_path: '//td[4]//input'
+home_team_path: '//td[5]//label'
+home_score_path: '//td[6]//input'
+
+location_path: '//td[7]//span'
+status_value_path: '//td[8]//a'
+status_select_path: '//td[8]//select'
+edit_path: '//td[9]//button'
+select_path: '//td[9]//input'

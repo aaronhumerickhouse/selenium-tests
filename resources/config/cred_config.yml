@@ -1,0 +1,5 @@
+staging:
+  member_management:
+    adult_athlete:
+      username: 'selenium+adult_athlete@sportngin.com'
+      password: 'tst1400200'

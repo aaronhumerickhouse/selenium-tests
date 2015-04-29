@@ -1,0 +1,35 @@
+<% sauce_username = ENV['SAUCE_USERNAME'] %>
+<% sauce_access_key = ENV['SAUCE_ACCESS_KEY'] %>
+
+member_management:
+  staging:
+    base_url: 'https://member-management.stage.ngin-staging.com'
+
+sauce_labs:
+  username: "<%= sauce_username %>"
+  access_key: "<%= sauce_access_key %>"
+  url: "http://<%=sauce_username%>:<%=sauce_access_key%>@ondemand.saucelabs.com:80/wd/hub"
+  capabilities:
+    max_duration: 7200
+    record_video: true
+    video_upload_on_pass: false
+    record_screenshots: true
+    record_logs: true
+    sauce_advisor: true
+    screen_resolution: '1280x1024'
+    selenium_version: '2.43.0'
+    javascript_enabled: true
+  browsers:
+    ie:
+      os: 'Windows 8.1'
+      browser: 'Internet Explorer'
+      browser_version: '11'
+    firefox:
+      os: 'Windows 7'
+      browser: 'Firefox'
+      browser_version: '35'
+    chrome:
+      os: 'OS X 10.10'
+      browser: 'Chrome'
+      browser_version: '41'
+

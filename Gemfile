@@ -1,0 +1,23 @@
+source 'https://rubygems.org'
+source 'https://Up97EjxiNexkaesDEnU1@repo.fury.io/sportngin/'
+
+gem 'sportngin-watir-webdriver' , '0.7.0.4'
+gem 'selenium-webdriver', '2.44'
+gem 'rspec', '3.1.0'
+gem 'rspec-core', '3.1.2'
+gem 'page-object', '1.0.0'
+gem 'watir-webdriver', '0.6.9'
+gem 'json', '~> 1.8.1'
+gem 'reek', '~> 1.3.8'
+gem 'rake', '~> 10.3.2' #code smells
+gem 'flay', '~> 2.5.0' #structural similarities
+gem 'rspec_junit_formatter'
+gem 'headless'
+gem 'aws-sdk'
+gem 'chromedriver-helper'
+gem 'yard'
+gem 'redcarpet'
+gem 'rufus-scheduler'
+gem 'faker'
+gem 'yarjuf'
+gem 'junit_merge'

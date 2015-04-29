@@ -1,0 +1,10 @@
+.idea/
+.DS_Store
+doc/
+screenshots/
+*.orig
+rspec_results*.html
+**/results*.xml
+**/results.xml
+results/
+.yardoc/

@@ -1,0 +1,37 @@
+<% game_table_path = "//div[@id=\"ScheduleList\"]//table" %>
+<% indexed_row_path = "#{game_table_path}//tbody[%s]" %>
+
+game_table_path: <%= game_table_path %>
+indexed_row_path: <%= "#{game_table_path}//tbody[%s]" %>
+indexed_display_row_path: <%= "#{indexed_row_path}//tr[1]" %>
+
+division_path: '//td[1]'
+stage_path: '//td[2]'
+pool_bracket_path: '//td[3]'
+game_path: '//td[4]//span'
+
+<% date_time_column = '//td[5]' %>
+date_input_path: <%= "#{date_time_column}//input[contains(@class,\"datepicker-input\")]" %>
+date_display_path: <%= "#{date_time_column}//input[contains(@class,\"datepicker-display\")]" %>
+time_input_path: <%= "#{date_time_column}//input[contains(@class,\"timepicker-input\")]" %>
+time_display_path: <%= "#{date_time_column}//input[contains(@class,\"timepicker-display\")]" %>
+
+away_team_path: '//td[6]//label'
+away_score_path: '//td[7]//input'
+home_team_path: '//td[8]//label'
+home_score_path: '//td[9]//input'
+
+location_path: '//td[10]//span'
+<% status_column = '//td[11]' %>
+status_value_path: <%= "#{status_column}//a" %>
+status_select_path: <%= "#{status_column}//select" %>
+
+conflict_path: '//td[12]/span'
+
+<% manage_column = '//td[13]' %>
+edit_path: <%= "#{manage_column}//button" %>
+select_path: <%= "#{manage_column}//input" %>
+
+indexed_edit_row_path: <%= "#{indexed_row_path}//tr[2]" %>
+
+schedule_list: 'div#ScheduleList'
